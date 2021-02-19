@@ -1,1 +1,14 @@
 // Specific CSS for your home-page
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.home-container{
+
+  h1{
+    font-family: lobster;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    color: white;
+  }
+}
+
