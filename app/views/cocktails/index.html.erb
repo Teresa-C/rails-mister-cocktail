@@ -9,7 +9,7 @@
   <% if cocktail.photo.attached? %>
     <% background_url = cl_image_path cocktail.photo.key, width: 400, height: 500, crop: :fill %>
   <% end %>
-    <div class="card-category card-container col-3 m-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= background_url %>)">
+    <div class="card-category card-container col-3 m-3" style="background-image: url(<%= background_url %>)">
       <%= link_to cocktail.name, cocktail_path(cocktail), class: "a-primary" %>
     </div>
   <% end %>
