@@ -1,8 +1,16 @@
-<div class="mx-auto mt-5 mb-5 d-flex flex-column justify-content-center " style="width: 600px;">
-  <h1>Create A New Cocktail</h1>
-  <%= simple_form_for(@cocktail) do |f| %>
-    <%= f.input :name %>
-    <%= f.input :photo, as: :file %>
-    <%= f.submit "submit", class: "btn btn-primary text-center" %>
-  <% end %>
+<div class="container form-container">
+  <div class="image">
+    <%= image_tag "form-img.jpeg" %>
+  </div>
+  <div class="form-content">
+    <h2>Create A New Cocktail</h2>
+    <p>Add the name of your cocktail and upload an image</p>
+    <%= simple_form_for(@cocktail) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :photo, as: :file %>
+      <%= f.submit "submit", class: "btn btn-primary text-center" %>
+    <% end %>
+  </div>
 </div>
+
+<!-- class="mx-auto mt-5 mb-5 d-flex flex-column justify-content-center " style="width: 600px;" -->

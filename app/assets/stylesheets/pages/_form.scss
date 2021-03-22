@@ -1,0 +1,22 @@
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+
+  .image{
+    margin-right: 64px;
+
+  }
+}
+
+
+@media(max-width: 800px) {
+  .form-container {
+    display: block;
+    margin-left: auto;
+  }
+  .form-content{
+    margin-top: 16px;
+  }
+}
