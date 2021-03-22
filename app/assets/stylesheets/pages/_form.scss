@@ -10,13 +10,30 @@
   }
 }
 
-
-@media(max-width: 800px) {
+@media(max-width: 983px) {
   .form-container {
     display: block;
-    margin-left: auto;
   }
   .form-content{
-    margin-top: 16px;
+    margin-top: 8px;
+    width: 500px;
+    margin-left: 120px;
   }
+  .image{
+   text-align: center;
+  }
+}
+
+@media(max-width: 767px) {
+  .form-container {
+    display: block;
+  }
+  .form-content{
+    margin-top: 8px;
+    margin-left: 0px;
+  }
+  .image{
+   text-align: left;
+  }
+
 }
